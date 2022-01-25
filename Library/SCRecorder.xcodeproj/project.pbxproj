@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7624B227A051B6001AB1C7 /* libSCRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23FE1117B4200700389EDA /* libSCRecorder.a */; };
 		9079317B1BD2A06700D7D181 /* SCFilter+VideoComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 907931791BD2A06700D7D181 /* SCFilter+VideoComposition.h */; };
 		9079317C1BD2A06700D7D181 /* SCFilter+VideoComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9079317A1BD2A06700D7D181 /* SCFilter+VideoComposition.m */; };
 		9079317F1BD451C200D7D181 /* SCFilter+UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9079317D1BD451C200D7D181 /* SCFilter+UIImage.h */; };
@@ -251,6 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7624B227A051B6001AB1C7 /* libSCRecorder.a in Frameworks */,
 				DCDC1E2D1AC7980A001DC3D9 /* AudioToolbox.framework in Frameworks */,
 				DCDC1E2C1AC79806001DC3D9 /* AVFoundation.framework in Frameworks */,
 				DCDC1E2B1AC79803001DC3D9 /* CoreGraphics.framework in Frameworks */,
@@ -651,6 +653,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = DC551C3B17ADD66000E37F8F;
@@ -966,6 +969,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = SCRecorderFramework/SCRecorder.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SCRecorder;
@@ -1002,6 +1006,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = SCRecorderFramework/SCRecorder.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SCRecorder;
